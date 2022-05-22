@@ -1,0 +1,87 @@
+.menu {
+  display: flex;
+  align-items: center;
+  margin: 1em;
+
+  &__links {
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    &__close-menu {
+      display: none;
+    }
+
+    &__main {
+      width: 40%;
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 1em;
+    }
+
+    &__session {
+      width: 20%;
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    @media (max-width: 750px) {
+      display: none;
+      justify-content: flex-start;
+
+      &__close-menu {
+        display: block;
+        padding: 1em;
+      }
+
+      &__main {
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+        padding: 0 1.5em;
+
+      }
+
+      &__session {
+        flex-direction: column;
+        justify-content: flex-start;
+        flex-grow: 1;
+        width: 100%;
+        padding: 0 1.5em 1.5em 1.5em;
+      }
+    }
+
+    &--mobile {
+      display: none;
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      width: 60%;
+      height: 100%;
+      flex-direction: column;
+      align-items: flex-end;
+      background-color: $color-white;
+
+      &:before {
+        content: "";
+        position: fixed;
+        left: 0;
+        width: 40%;
+        height: 100%;
+        background-color: $color-black;
+        opacity: 60%;
+      }
+    }
+  }
+
+  &__burger-icon {
+    display: none;
+    @media (max-width: 750px) {
+      display: block;
+    }
+  }
+
+  &__icon {
+    margin: auto 0;
+  }
+}

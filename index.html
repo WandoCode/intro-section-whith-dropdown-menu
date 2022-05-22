@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!-- displays site properly based on user's device -->
+    <link href="./styles/main.css" rel="stylesheet">
+    <script defer src="./script.js"></script>
+
+    <title>Intro section with dropdown navigation</title>
+
+</head>
+<body>
+<header class="menu split">
+    <img alt="snap logo" class="menu__icon" src="./images/logo.svg">
+    <img alt="menu bruger button" class="menu__burger-icon" src="images/icon-menu.svg"/>
+    <nav class="menu__links split">
+        <div class="menu__links__main ">
+            <div class="submenu">
+                <div class="submenu__title">
+                    Features
+                    <img alt="arrow down" class="submenu__title__arrow" src="./images/icon-arrow-down.svg">
+                </div>
+                <div class="submenu__items">
+                    <div class="submenu__item">
+                        <a href="#">
+                            <div class="img-wrapper">
+                                <img alt="todo list" src="./images/icon-todo.svg">
+                            </div>
+                            Todo list
+                        </a>
+                    </div>
+                    <div class="submenu__item">
+                        <a href="#">
+                            <div class="img-wrapper">
+                                <img alt="calendar" src="./images/icon-calendar.svg">
+                            </div>
+                            Calendar
+                        </a>
+                    </div>
+                    <div class="submenu__item">
+                        <a href="#">
+                            <div class="img-wrapper">
+                                <img alt="reminder" src="./images/icon-reminders.svg">
+                            </div>
+                            Reminders
+                        </a>
+                    </div>
+                    <div class="submenu__item">
+                        <a href="#">
+                            <div class="img-wrapper">
+                                <img alt="planning" src="./images/icon-planning.svg">
+                            </div>
+                            Planning
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="submenu">
+                <div class="submenu__title">
+                    Company
+                    <img alt="arrow down" class="submenu__title__arrow" src="./images/icon-arrow-down.svg">
+                </div>
+                <div class="submenu__items">
+                    <div class="submenu__item">
+                        <a href="#">History</a>
+                    </div>
+                    <div class="submenu__item">
+                        <a href="#">Our Team</a>
+                    </div>
+                    <div class="submenu__item">
+                        <a href="#">Blog</a>
+                    </div>
+                </div>
+            </div>
+            <div class="submenu single-link"><a href="#">Careers</a></div>
+            <div class="submenu single-link"><a href="#">About</a></div>
+        </div>
+        <div class="menu__links__session ">
+            <button class="btn btn--transparent">Login</button>
+            <button class="btn btn--secondary">Register</button>
+        </div>
+    </nav>
+
+
+    <nav class="menu__links menu__links--mobile split">
+        <img alt="close menu icon" class="menu__links__close-menu" src="./images/icon-close-menu.svg">
+        <div class="menu__links__main ">
+            <div class="submenu">
+                <div class="submenu__title">
+                    Features
+                    <img alt="arrow down" class="submenu__title__arrow" src="./images/icon-arrow-down.svg">
+                </div>
+                <div class="submenu__items">
+                    <div class="submenu__item">
+                        <a href="#">
+                            <div class="img-wrapper">
+                                <img alt="todo list" src="./images/icon-todo.svg">
+                            </div>
+                            Todo list
+                        </a>
+                    </div>
+                    <div class="submenu__item">
+                        <a href="#">
+                            <div class="img-wrapper">
+                                <img alt="calendar" src="./images/icon-calendar.svg">
+                            </div>
+                            Calendar
+                        </a>
+                    </div>
+                    <div class="submenu__item">
+                        <a href="#">
+                            <div class="img-wrapper">
+                                <img alt="reminder" src="./images/icon-reminders.svg">
+                            </div>
+                            Reminders
+                        </a>
+                    </div>
+                    <div class="submenu__item">
+                        <a href="#">
+                            <div class="img-wrapper">
+                                <img alt="planning" src="./images/icon-planning.svg">
+                            </div>
+                            Planning
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="submenu">
+                <div class="submenu__title">
+                    Company
+                    <img alt="arrow down" class="submenu__title__arrow" src="./images/icon-arrow-down.svg">
+                </div>
+                <div class="submenu__items">
+                    <div class="submenu__item">
+                        <a href="#">History</a>
+                    </div>
+                    <div class="submenu__item">
+                        <a href="#">Our Team</a>
+                    </div>
+                    <div class="submenu__item">
+                        <a href="#">Blog</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="submenu single-link"><a href="#">Careers</a></div>
+            <div class="submenu single-link"><a href="#">About</a></div>
+        </div>
+        <div class="menu__links__session ">
+            <button class="btn btn--transparent">Login</button>
+            <button class="btn btn--secondary">Register</button>
+        </div>
+    </nav>
+
+
+</header>
+<main>
+    <div class="hero">
+        <div class="hero__img"></div>
+        <div class="hero__text">
+            <div class="hero__text__upper">
+                <h1>Make remote work</h1>
+
+                <h2>Get your team in sync, no matter your location. Streamline processes,
+                    create team rituals, and watch productivity soar.</h2>
+
+                <button class="btn">Learn more</button>
+            </div>
+            <div class="hero__sponsor">
+                <img alt="databiz sponsor icon" src="./images/client-databiz.svg">
+                <img alt="audiophile sponsor icon" src="./images/client-audiophile.svg">
+                <img alt="meet sponsor icon" src="./images/client-meet.svg">
+                <img alt="maker sponsor icon" src="./images/client-maker.svg">
+            </div>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>
